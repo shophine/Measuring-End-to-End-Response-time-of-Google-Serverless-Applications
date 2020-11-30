@@ -1,0 +1,25 @@
+{
+  "name": "csci8795-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --inspect node_modules/@google-cloud/functions-framework --target=cityInformation",
+    "deploy": "gcloud functions deploy 'cityInformation' --runtime nodejs12 --trigger-http --entry-point=cityInformation"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfadoo98/csci8795-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfadoo98/csci8795-final-project/issues"
+  },
+  "homepage": "https://github.com/sfadoo98/csci8795-final-project#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "firebase": "^8.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "dogcat-classifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --inspect node_modules/@google-cloud/functions-framework --target=dogClassifier",
+    "deploy": "gcloud functions deploy 'dogClassifier' --runtime nodejs12 --trigger-http --entry-point=dogClassifier"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "firebase": "^8.0.0",
+    "kraken": "^0.4.0",
+    "node-fetch": "^2.6.1"
+  }
+}
