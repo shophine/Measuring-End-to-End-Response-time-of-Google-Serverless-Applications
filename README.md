@@ -1,4 +1,4 @@
-# Measuring End-to-End Response Time of Google Serverless Applications
+# Measuring Performance of Google Serverless Applications
 
 ## Installation
 
